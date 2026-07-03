@@ -1,0 +1,139 @@
+.about-section {
+  @include media(desktop) {
+  }
+}
+
+.about-section-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1440px;
+  }
+}
+
+.about-container {
+  @include media(desktop) {
+  }
+}
+
+.about-title {
+  @include media(desktop) {
+  }
+}
+
+.about-top-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  max-width: 323px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include media(desktop) {
+    gap: 34px;
+    max-width: 609px;
+  }
+}
+
+.about-list-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @include media(desktop) {
+    justify-content: space-between;
+  }
+}
+
+.about-img {
+  min-width: 62px;
+
+  @include media(desktop) {
+    min-width: 96px;
+  }
+}
+
+.about-item-text-wrapper {
+  @include media(desktop) {
+    max-width: 472px;
+  }
+}
+
+.about-item-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.about-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.about-bg-img {
+  @include media(desktop) {
+    min-width: 316px;
+  }
+}
+
+.about-bottom-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}

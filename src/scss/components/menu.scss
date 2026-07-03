@@ -1,0 +1,109 @@
+.context-menu {
+  background: #02012a;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  height: 100%;
+  overflow-y: auto;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.context-container {
+  padding: 0 40px;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 22px;
+  margin-bottom: 150px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.close-icon {
+  stroke: #fff;
+}
+
+.context-nav {
+}
+
+.context-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.context-list-item {
+}
+
+.context-list-link {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+
+  &:active {
+  }
+}
+
+.context-cta-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #9831f2 0%, #651aca 100%);
+  border-radius: 20px;
+  padding: 10px 32px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+  @include media(desktop) {
+  }
+}
+
+.is-open {
+  display: flex;
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.closed {
+  display: none;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.screen-freeze {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
