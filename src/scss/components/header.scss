@@ -1,5 +1,5 @@
 .header {
-  background: #02012a;
+  background: transparent;
   position: fixed;
   width: 100%;
   top: 0;
@@ -15,8 +15,7 @@
 }
 
 .header-bg-wrapper {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 14px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -27,14 +26,23 @@
 }
 
 .header-container {
-  padding: 0 40px;
+  padding: 0 12px;
 
   @include media(desktop) {
-    padding: 0 76px;
+    padding: 0 22px;
   }
 }
 
 .nav {
+  background: linear-gradient(
+    53deg,
+    rgba(21, 41, 79, 0.9) 0%,
+    rgba(20, 41, 78, 0.9) 90.78%,
+    rgba(100, 152, 249, 0.9) 100%
+  );
+  border: 1px solid #00d0ff;
+  border-radius: 20px;
+  padding: 11px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,7 +53,6 @@
 
 .header-logo-link {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -63,7 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
   }
 }
 
@@ -74,33 +81,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 800;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
   font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
   color: #fff;
   transition: color 0.3s ease-in-out;
 
   &:hover,
   &.active {
-  }
-}
-
-.header-cta-link {
-  display: none;
-
-  @include media(desktop) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(180deg, #9831f2 0%, #651aca 100%);
-    border-radius: 20px;
-    padding: 10px 32px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-    max-width: max-content;
   }
 }
 

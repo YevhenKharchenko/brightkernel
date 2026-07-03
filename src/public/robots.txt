@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://midoutline.pro/sitemap.xml
+Sitemap: https://brightkernel.online/sitemap.xml

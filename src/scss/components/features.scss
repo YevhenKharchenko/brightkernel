@@ -5,21 +5,14 @@
 
 .features-section-wrapper {
   padding-top: 50px;
-  padding-bottom: 30px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  background-image: url(../img/features/features-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
 
   @include media(desktop) {
     padding-top: 100px;
-    padding-bottom: 23px;
     max-width: 1440px;
-    background-image: url(../img/features/features-bg-desk.png);
   }
 }
 
@@ -43,15 +36,12 @@
 
   @include media(desktop) {
     font-size: 20px;
-    max-width: 860px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 50px;
   }
 }
 
 .features-swiper-container {
-  max-width: 260px;
+  max-width: 231px;
   margin-left: auto;
   margin-right: auto;
 
@@ -67,7 +57,6 @@
 .features-swiper-wrapper {
   @include media(desktop) {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -76,32 +65,28 @@
 }
 
 .features-list-item {
-  background: linear-gradient(
-    180deg,
-    rgba(152, 49, 242, 0.2) 0%,
-    rgba(101, 26, 202, 0.2) 100%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 208, 255, 0.1);
+  border: 2px solid #00d0ff;
   border-radius: 20px;
-  padding: 13px 19px 27px;
+  padding: 7px 11px 19px;
   width: 100% !important;
-  max-width: 260px;
+  max-width: 231px;
   display: flex !important;
   flex-direction: column;
-  min-height: 276px;
+  min-height: 311px;
   overflow: hidden;
 
   @include media(desktop) {
-    padding: 13px 21px 13px;
-    max-width: 316px;
-    min-height: 365px;
+    padding: 7px 13px 29px;
+    max-width: 232px;
+    min-height: 402px;
   }
 }
 
 .features-img {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
 
   @include media(desktop) {
   }
@@ -113,15 +98,14 @@
 }
 
 .features-item-title {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  text-align: center;
   color: #fff;
   margin-bottom: 10px;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -157,10 +141,14 @@
   font-size: 14px;
   text-align: center;
   color: #fff;
-  margin-top: 10px;
+  max-width: 294px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 
   @include media(desktop) {
     font-size: 20px;
+    max-width: max-content;
     margin-top: 30px;
   }
 }

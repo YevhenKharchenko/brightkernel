@@ -4,20 +4,20 @@
 }
 
 .cta-bg-wrapper {
-  padding-top: 40px;
-  padding-bottom: 100px;
+  padding-top: 68px;
+  padding-bottom: 68px;
   max-width: 375px;
   margin: 0 auto;
-  background-image: url(../img/cta/cta-bg-mob.jpg);
+  background-image: url(../img/cta/cta-bg-mob.png);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
 
   @include media(desktop) {
-    padding-top: 107px;
-    padding-bottom: 107px;
+    padding-top: 127px;
+    padding-bottom: 127px;
     max-width: 1440px;
-    background-image: url(../img/cta/cta-bg-desk.jpg);
+    background-image: url(../img/cta/cta-bg-desk.png);
   }
 }
 
@@ -37,13 +37,12 @@
 }
 
 .cta-title {
-  max-width: 322px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
 
   @include media(desktop) {
-    max-width: 672px;
+    max-width: 870px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 50px;
   }
 }
@@ -52,37 +51,13 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
-  max-width: 317px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-
-  @include media(desktop) {
-    font-size: 20px;
-    max-width: 664px;
-    margin-bottom: 50px;
-  }
-}
-
-.cta-btn {
-  background: linear-gradient(180deg, #fed73d 0%, #fcae0d 100%);
-  border-radius: 20px;
-  padding: 11px 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 800;
-  font-size: 14px;
   text-align: center;
-  color: #000;
-  max-width: max-content;
-  margin-left: auto;
-  margin-right: auto;
+  color: #fff;
 
   @include media(desktop) {
-    padding: 15px 100px;
     font-size: 20px;
+    max-width: 478px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
