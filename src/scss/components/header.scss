@@ -61,6 +61,8 @@
 }
 
 .header-logo-img {
+  @include media(desktop) {
+  }
 }
 
 .nav-list {
